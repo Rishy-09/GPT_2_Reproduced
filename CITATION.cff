@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this reproduction in your work, please cite it as below."
+authors:
+  - family-names: "Chanana"
+    given-names: "Naman"
+title: "GPT-2 Reproduced"
+abstract: "A from-scratch reproduction of GPT-2 (124M) in PyTorch, trained on FineWeb-Edu with modern training optimizations."
+date-released: 2026-11-19
+url: "https://github.com/Rishy-09/GPT_2_Reproduced"
+repository-code: "https://github.com/Rishy-09/GPT_2_Reproduced"
+license: MIT
+keywords:
+  - GPT-2
+  - transformer
+  - language model
+  - PyTorch
+  - FineWeb-Edu
+  - distributed training
