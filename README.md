@@ -1,13 +1,21 @@
-# 🚀 GPT-2 (124M) — Rebuilt from Scratch GPT-2
+# GPT-2 (124M) — Rebuilt from Scratch GPT-2
+
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![PyTorch](https://img.shields.io/badge/PyTorch-GPT--2-EE4C2C?logo=pytorch)
+![Model](https://img.shields.io/badge/Model-GPT--2%20124M-purple)
+![Dataset](https://img.shields.io/badge/Dataset-FineWeb--Edu-yellow)
+![Training](https://img.shields.io/badge/Training-DDP%20%7C%20BF16-blueviolet)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 
 A **minimal**, **high-performance**, and **fully functional** reproduction of GPT-2 (124M parameters) implemented in **PyTorch**, inspired by Karpathy’s *“Let’s Build GPT”*.
 
 Engineered with **modern optimizations**:
-Flash Attention ⚡ | `torch.compile()` 🚀 | BF16 Mixed Precision 💡 | Fused AdamW 🔥 | Efficient Sharded Data Loading 📦
+Flash Attention | `torch.compile()` | BF16 Mixed Precision | Fused AdamW | Efficient Sharded Data Loading
 
 ---
 
-## 🌟 Why This Repo Exists
+## Why This Repo Exists
 
 GPT-2 is still the **sweet spot** for:
 
@@ -23,7 +31,7 @@ This codebase:
 
 ---
 
-## 🧠 Architecture & Implementation Choices
+## Architecture & Implementation Choices
 
 | Feature                      | What It Means                        | Why It Matters                                    |
 | ---------------------------- | ------------------------------------ | ------------------------------------------------- |
@@ -44,7 +52,7 @@ This codebase:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 /
@@ -57,7 +65,7 @@ This codebase:
 
 ---
 
-## ⚙️ Setup
+## Setup
 
 ### 1️⃣ Install Dependencies
 
@@ -74,7 +82,7 @@ git lfs track "*.pt"
 
 ---
 
-## 📚 Dataset — FineWeb-Edu
+## Dataset — FineWeb-Edu
 
 A high-quality web-scale dataset curated for LLM training.
 
@@ -96,7 +104,7 @@ fineweb/
 
 ---
 
-## 🚂 Training the Model
+## Training the Model
 
 Default configuration:
 **12 layers | 12 heads | 768 hidden dim | ~124M params**
@@ -128,7 +136,7 @@ smart `require_backward_grad_sync` toggling during accumulation.
 
 ---
 
-## 🤖 Text Generation (Inference)
+## Text Generation (Inference)
 
 Example script logic:
 
@@ -141,7 +149,7 @@ print(model.generate("Hello world,"))
 
 ---
 
-## 🧪 Validation & Debugging
+## Validation & Debugging
 
 | Check                | Expected Value                         |
 | -------------------- | -------------------------------------- |
@@ -153,7 +161,7 @@ print(model.generate("Hello world,"))
 ---
 
 
-## 🏗️ Future Work Ideas
+## Future Work Ideas
 
 * ✨ Extend to GPT-2 Medium/XL
 * 🧩 Add LoRA for cheap fine-tuning
@@ -163,7 +171,7 @@ print(model.generate("Hello world,"))
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 * **Andrej Karpathy** — nanoGPT architecture & awesome educational resources
 * **OpenAI Authors** — GPT-2 architecture & original weights
@@ -171,6 +179,6 @@ print(model.generate("Hello world,"))
 
 ---
 
-## 📜 License
+## License
 
 MIT — free to use, modify, and build upon.
