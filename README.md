@@ -13,6 +13,8 @@ A **minimal**, **high-performance**, and **fully functional** reproduction of GP
 Engineered with **modern optimizations**:
 Flash Attention | `torch.compile()` | BF16 Mixed Precision | Fused AdamW | Efficient Sharded Data Loading
 
+> This repository uses GitHub Actions for automated CI checks on every push and pull request.
+
 ---
 
 ## Why This Repo Exists
